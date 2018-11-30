@@ -1,0 +1,41 @@
+.ui-layout-north {
+    z-index: 20 !important;
+    overflow: visible !important;
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.ui-layout-west{
+    background-color: rgba(135, 137, 137, 0.3);
+}
+
+.ui-layout-west .ui-layout-unit-content{
+    background-color: rgba(135, 137, 137, 0.3);
+    font-weight: bolder;
+}
+
+.ui-layout-north .ui-layout-unit-content {
+    overflow: visible !important;
+    background-color: rgba(0, 255, 0, 0) !important;
+}
+.ui-widget-header {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(132, 255, 41, 0.9);
+}
+.ui-button {
+    margin-top: 10px !important;
+}
+
+.ui-layout-center {
+    z-index: 20 !important;
+    overflow: visible !important;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.ui-layout-center .ui-layout-unit-content {
+    overflow: visible !important;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+input {
+    color: black;
+}

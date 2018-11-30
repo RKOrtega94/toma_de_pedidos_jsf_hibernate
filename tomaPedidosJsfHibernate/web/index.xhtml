@@ -1,12 +1,57 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Inicio</title>
+        <link href="resources/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/style.css" rel="stylesheet" type="text/css"/>
     </h:head>
     <h:body>
-        Hola
+        <p:panel style="padding: 0px">
+            <f:facet name="header">
+                <p:graphicImage value="/resources/images/icon.png"
+                                height="100"
+                                style="position: fixed"/>
+                <div align="center">
+                    <h:outputText value="MENU A LA CARTA" 
+                                  style="font-size: 50px;
+                                  margin: 0px !important;"/>
+                </div>
+            </f:facet>
+        </p:panel>
+        <div class="container-fluid">
+            <div class="col-lg-offset-4 col-lg-4 col-xs-offset-3 col-xs-6"
+                 style="padding-top: 5em">
+                <p:panelGrid columns="2"
+                             styleClass="ui-noborder"
+                             style="width: 100%">
+                    <f:facet name="header">
+                        <h:outputText value="INICIAR SESION"/>
+                    </f:facet>
+                    <p:outputLabel for="txtUsername"
+                                   value="Usuario: "/>
+                    <p:inputText id="txtUsername"
+                                 value=""
+                                 required="true"
+                                 style="width: 100%"/>
+                    <p:outputLabel for="txtPassword"
+                                   value="Clave: "/>
+                    <p:password id="txtPassword"
+                                value=""
+                                required="true"
+                                style="width: 100%"/>
+                    <f:facet name="footer">
+                        <center>
+                            <p:commandButton id="btnLogin"
+                                             value="Acceder"/>
+                        </center>
+                    </f:facet>
+                </p:panelGrid>
+            </div>
+        </div>
     </h:body>
 </html>
-

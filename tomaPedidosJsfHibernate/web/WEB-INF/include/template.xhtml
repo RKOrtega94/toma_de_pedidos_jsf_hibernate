@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../../resources/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../../resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../../resources/css/pfcrud.css" rel="stylesheet" type="text/css"/>
+        <script src="../../resources/js/pfcrud.js" type="text/javascript"></script>
+        <title><ui:insert name="title">default title</ui:insert></title>
+    </h:head>
+
+    <h:body>
+
+        <p:growl id="growl" life="3000"/>
+
+        <p:layout fullPage="true">
+            <p:layoutUnit position="north"
+                          style="padding: 0px !important">
+                <f:facet name="header">
+                    <h:form id="headerForm">
+                        <p:commandLink>
+                            <p:graphicImage value="../../resources/images/icon.png"
+                                            height="70"
+                                            style="position: fixed"/>
+                        </p:commandLink>
+                        <div align="center">
+                            <h:outputText value="MENU A LA CARTA" 
+                                          style="font-size: 50px;
+                                          margin: 0px !important;"/>
+                        </div>
+                    </h:form>
+                </f:facet>
+                <ui:include src="/WEB-INF/include/appmenu.xhtml"/>
+            </p:layoutUnit>
+
+            <p:layoutUnit position="center">
+                <ui:insert name="body"/>
+            </p:layoutUnit>
+        </p:layout>
+
+    </h:body>
+
+</html>
