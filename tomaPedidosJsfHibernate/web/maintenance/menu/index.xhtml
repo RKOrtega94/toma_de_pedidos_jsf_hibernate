@@ -12,36 +12,50 @@
 
     <ui:define name="body">
         <h:form>
-    <p:dataTable var="car" value="#{dtPaginatorView.cars}" rows="10"
-                 paginator="true"
-                 paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
-                 rowsPerPageTemplate="5,10,15">
-        <p:column headerText="Id">
-            <h:outputText value="#{car.id}" />
-        </p:column>
- 
-        <p:column headerText="Year">
-            <h:outputText value="#{car.year}" />
-        </p:column>
- 
-        <p:column headerText="Brand">
-            <h:outputText value="#{car.brand}" />
-        </p:column>
- 
-        <p:column headerText="Color">
-            <h:outputText value="#{car.color}" />
-        </p:column>
- 
-        <f:facet name="paginatorTopLeft">
-            <p:commandButton type="button" icon="pi pi-refresh" />
-        </f:facet>
- 
-        <f:facet name="paginatorBottomRight">
-            <p:commandButton type="button" icon="pi pi-cloud-upload" />
-        </f:facet>
- 
-    </p:dataTable>
-</h:form>
+            <p:panel>
+                <f:facet name="header">
+                    Menus
+                </f:facet>
+                <!--                            <p:contextMenu id="EmpresaContextMenu"
+                                                           for="details">
+                                                <p:menuitem value="Editar"
+                                                            onclick=""
+                                                            icon="ui-icon-pencil"/>
+                                            </p:contextMenu>-->
+                <p:dataTable id="details">
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Nombre del menu"/>
+                        </f:facet>
+                        <h:outputText value=""/> 
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Descripcion"/>
+                        </f:facet>
+                        <h:outputText value=""/> 
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Fecha de registro"/>
+                        </f:facet>
+                        <h:outputText value=""/> 
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Fecha de modificacion"/>
+                        </f:facet>
+                        <h:outputText value=""/> 
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Estado"/>
+                        </f:facet>
+                        <h:outputText value=""/> 
+                    </p:column>
+                </p:dataTable>
+            </p:panel>
+        </h:form>
     </ui:define>
 
 </ui:composition>

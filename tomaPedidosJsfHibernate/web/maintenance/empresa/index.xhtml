@@ -15,30 +15,45 @@
             </ui:define>
 
             <ui:define name="body">
-                <center>
-                    <h:form id="form">
-                        <p:panelGrid columns="2">
-                            <f:facet name="header">
-                                <h:outputText value="empesa"/>
-                            </f:facet>
-
-                            <h:outputText value="Razon social:" />
-                            <h:outputText value="Nombre de enpresa" />
-
-                            <h:outputText value="Ruc:" />
-                            <h:outputText value="Numero de ruc" />
-
-                            <h:outputText value="Direccion:" />
-                            <h:outputText value="Direccion de la empresa" />
-
-                            <h:outputText value="Telefono:" />
-                            <h:outputText value="Numero de telefono" />
-                            
-                            <h:outputText value="Correo:" />
-                            <h:outputText value="Correo" />
-                        </p:panelGrid>
-                    </h:form>
-                </center>
+                <h:form id="form">
+                    <p:panel>
+                        <f:facet name="header">
+                            empresa
+                        </f:facet>
+                        <!--                            <p:contextMenu id="EmpresaContextMenu"
+                                                                   for="details">
+                                                        <p:menuitem value="Editar"
+                                                                    onclick=""
+                                                                    icon="ui-icon-pencil"/>
+                                                    </p:contextMenu>-->
+                        <p:dataTable id="details">
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="Razon Social"/>
+                                </f:facet>
+                                <h:outputText value="Nombre de la empresa"/> 
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="RUC"/>
+                                </f:facet>
+                                <h:outputText value="Ruc de la empresa"/> 
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="Telefono"/>
+                                </f:facet>
+                                <h:outputText value="Telefono de la empresa"/> 
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="Direccion"/>
+                                </f:facet>
+                                <h:outputText value="Direccion de la empresa"/> 
+                            </p:column>
+                        </p:dataTable>
+                    </p:panel>
+                </h:form>
             </ui:define>
 
         </ui:composition>

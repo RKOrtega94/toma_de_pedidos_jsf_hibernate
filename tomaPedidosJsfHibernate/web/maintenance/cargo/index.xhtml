@@ -16,36 +16,44 @@
 
             <ui:define name="body">
                 <h:form>
-    <p:dataTable var="car" value="#{dtPaginatorView.cars}" rows="10"
-                 paginator="true"
-                 paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
-                 rowsPerPageTemplate="5,10,15">
-        <p:column headerText="Id">
-            <h:outputText value="#{car.id}" />
-        </p:column>
- 
-        <p:column headerText="Year">
-            <h:outputText value="#{car.year}" />
-        </p:column>
- 
-        <p:column headerText="Brand">
-            <h:outputText value="#{car.brand}" />
-        </p:column>
- 
-        <p:column headerText="Color">
-            <h:outputText value="#{car.color}" />
-        </p:column>
- 
-        <f:facet name="paginatorTopLeft">
-            <p:commandButton type="button" icon="pi pi-refresh" />
-        </f:facet>
- 
-        <f:facet name="paginatorBottomRight">
-            <p:commandButton type="button" icon="pi pi-cloud-upload" />
-        </f:facet>
- 
-    </p:dataTable>
-</h:form>
+                    <p:panel>
+                        <f:facet name="header">
+                            cargo
+                        </f:facet>
+                        <!--                            <p:contextMenu id="EmpresaContextMenu"
+                                                                   for="details">
+                                                        <p:menuitem value="Editar"
+                                                                    onclick=""
+                                                                    icon="ui-icon-pencil"/>
+                                                    </p:contextMenu>-->
+                        <p:dataTable id="details">
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="Cargo"/>
+                                </f:facet>
+                                <h:outputText value="detalle cargo"/> 
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="fecha creacion"/>
+                                </f:facet>
+                                <h:outputText value="fecha creacion"/> 
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="feha de modifocacion"/>
+                                </f:facet>
+                                <h:outputText value="feha de modifocacion"/> 
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="Estado"/>
+                                </f:facet>
+                                <h:outputText value="Estado"/> 
+                            </p:column>
+                        </p:dataTable>
+                    </p:panel>
+                </h:form>
             </ui:define>
 
         </ui:composition>
