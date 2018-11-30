@@ -4,8 +4,18 @@
 .ui-layout-north {
     z-index:20 !important;
     overflow:visible !important;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    border: none;
 }
+
+.ui-layout-center{
+    border: none;
+}
+
+.ui-layout-west{
+    border: none;
+}
+
 .ui-layout-north .ui-layout-unit-content {
     overflow:visible !important;
     background-color: rgba(0,0,0,0);
@@ -22,4 +32,15 @@
 .column {
     font-weight: bold;
     background-color: menu;
+}
+
+.btn-warning{
+    background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #eb9316 100%) !important;
+    background-image:      -o-linear-gradient(top, #f0ad4e 0%, #eb9316 100%) !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(#eb9316)) !important;
+    background-image:         linear-gradient(to bottom, #f0ad4e 0%, #eb9316 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffeb9316', GradientType=0) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false) !important;
+    background-repeat: repeat-x !important;
+    border-color: #e38d13 !important;
 }
