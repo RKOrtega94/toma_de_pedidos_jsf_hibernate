@@ -16,24 +16,28 @@
 
             <ui:define name="body">
                 <center>
-                    <p:panelGrid>
-                        <h:form>
-                            <p:row>
-                                <f:facet name="header">
-                                    Empresa
-                                </f:facet>
-                            </p:row>
-                            <p:row>
-                                <p:column>
-                                    <h:outputText value="Razon social"/>
-                                </p:column>
-                                <p:column>
-                                    <p:inputText id="txtRazonSocial"
-                                                 value=""/>
-                                </p:column>
-                            </p:row>
-                        </h:form>
-                    </p:panelGrid>
+                    <h:form id="form">
+                        <p:panelGrid columns="2">
+                            <f:facet name="header">
+                                <h:outputText value="empesa"/>
+                            </f:facet>
+
+                            <h:outputText value="Razon social:" />
+                            <h:outputText value="Nombre de enpresa" />
+
+                            <h:outputText value="Ruc:" />
+                            <h:outputText value="Numero de ruc" />
+
+                            <h:outputText value="Direccion:" />
+                            <h:outputText value="Direccion de la empresa" />
+
+                            <h:outputText value="Telefono:" />
+                            <h:outputText value="Numero de telefono" />
+                            
+                            <h:outputText value="Correo:" />
+                            <h:outputText value="Correo" />
+                        </p:panelGrid>
+                    </h:form>
                 </center>
             </ui:define>
 
