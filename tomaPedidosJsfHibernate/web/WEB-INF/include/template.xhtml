@@ -11,6 +11,7 @@
         <link href="../../resources/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
         <link href="../../resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="../../resources/css/pfcrud.css" rel="stylesheet" type="text/css"/>
+        <link href="../../resources/css/style.css" rel="stylesheet" type="text/css"/>
         <script src="../../resources/js/pfcrud.js" type="text/javascript"></script>
         <title><ui:insert name="title">default title</ui:insert></title>
     </h:head>
@@ -21,8 +22,10 @@
 
         <p:layout fullPage="true">
             <p:layoutUnit position="north"
-                          style="padding: 0px !important">
-                <f:facet name="header">
+                          style="padding: 0px !important"
+                          styleClass="ui-myLayout">
+                <f:facet name="header"
+                         class="ui-myLayout">
                     <h:form id="headerForm">
                         <div align="center">
                             <h:outputText value="MENU A LA CARTA" 

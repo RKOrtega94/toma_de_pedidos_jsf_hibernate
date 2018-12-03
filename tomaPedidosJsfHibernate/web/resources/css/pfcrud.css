@@ -4,22 +4,41 @@
 .ui-layout-north {
     z-index:20 !important;
     overflow:visible !important;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0) !important;
     border: none;
 }
 
 .ui-layout-center{
     border: none;
+    background-color: rgba(0,0,0,0) !important;
 }
 
 .ui-layout-west{
     border: none;
+    background-color: rgba(0,0,0,0) !important;
 }
 
 .ui-layout-north .ui-layout-unit-content {
     overflow:visible !important;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0) !important;
 }
+
+/*.ui-layout-pane-north{
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.ui-layout-unit-content {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.ui-panelgrid{
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.ui-widget-content{
+    background-color: rgba(0,0,0,0) !important;
+}*/
+
 .ui-widget-header {
     text-align: left;
     text-transform: uppercase;
@@ -44,3 +63,51 @@
     background-repeat: repeat-x !important;
     border-color: #e38d13 !important;
 }
+
+.btn-primary {
+    background-image: -webkit-linear-gradient(top, #337ab7 0%, #265a88 100%)  !important;
+    background-image:      -o-linear-gradient(top, #337ab7 0%, #265a88 100%)  !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#265a88))  !important;
+    background-image:         linear-gradient(to bottom, #337ab7 0%, #265a88 100%)  !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff265a88', GradientType=0) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false)  !important;
+    background-repeat: repeat-x  !important;
+    border-color: #245580  !important;
+    color: white !important;
+}
+
+.btn-success{
+    background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%) !important;
+    background-image:      -o-linear-gradient(top, #5cb85c 0%, #419641 100%) !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#419641)) !important;
+    background-image:         linear-gradient(to bottom, #5cb85c 0%, #419641 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false) !important;
+    background-repeat: repeat-x !important;
+    border-color: #3e8f3e !important;
+    color: white !important;
+}
+
+.ui-panel{
+    background-color: rgba(0,0,0,0) !important;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*.ui-panel-content{
+    background-color: rgba(0,0,0,0) !important;
+}
+
+ui-layout-pane-west{
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.ui-menubar,.ui-menu-child,.ui-menu {
+   background-color: rgba(215, 40, 40, 0.6) !important;
+}
+
+.ui-myLayout{
+    background-color: rgba(0,0,0,0) !important;
+    align-content: center !important;
+}*/

@@ -3,6 +3,11 @@
     font-weight: 700;
 }
 
+body{
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+}
+
 .noedit{
     background-color: rgba(150, 150, 150, 0.5);
 }
